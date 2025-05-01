@@ -1,12 +1,12 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yes ] $() Select by Element, ID AND Class 
+[ yes ] Use Three Different jQuery Methods 
+[ yes ] Add Five CSS Declarations
+[ yes ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .addClass() method
+[ yes ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
 [ no ] Feature 4 - Use .show() method
@@ -25,39 +25,58 @@ Select ONE Additional
     <button id="mem1-button">Memory #1</button>
     <button id="mem2-button">Memory #2</button>
     <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <h1>My Top 3 Memories of <span>This Year</span> </h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
-      </li>
+        <h3 id="mem1">Memory #1</h3>
+        <p>My gala at town hall at the edison ball room.</p>
+        <img src="https://images.squarespace-cdn.com/content/v1/5debeeba0803c10a011d726a/1577992490003-2S60NOR404LFAQHOI8B2/Edison-Ballroom_Corporate_10.jpg" width= "400" id="Piano" style="display:  none">
 
-      <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
-      </li>
+      </li>
 
-      <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
-      </li>
-    </ol>
+      <li>
+        <h3 id="mem2">Memory #2</h3>
+        <p>Going to Europe again.</p>
+         <img src= "https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_3840,g_auto/f_auto/q_auto/v1/shutterstock_2118458942_ss_non-editorial_jnjpwq?_a=BAVAZGDX0" width= "400" id="law" style="display: none">
+      </li>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <li>
+        <h3 id="mem3">Memory #3</h3>
+        <p>My best friends  birthday</p>
+        <img src= "https://www.postable.com/blog/wp-content/uploads/2019/04/surprise_bday2.jpg" width= "400" id="birth" style="display: none">
+      </li>
+    </ol>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   
     <script>
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
-      });
+      $("h1").text(" MY THREE TOP MEMEORIES LOL!!!");
+      
+ $("p").css("color", "blue ")
+     
+      
+      $("#mem1-button").click(function () {
+        $("#mem1").css("color", "purple");
+        $("#Piano").show(3000)
 
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
-      });
+      });
 
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-      });
-    </script>
-  </body>
+      
+      $("#mem2-button").click(function () {
+        $("#mem2").css("color", "blue");
+        $("#law").show(3000)
+      
+ });
+
+      
+      $("#mem3-button").click(function () {
+        $("#mem3").css("color", "green");
+        $("#birth").show(3000)
+      });
+    </script>
+  </body>
 </html>
+
+  
 
 <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
